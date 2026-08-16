@@ -10,8 +10,10 @@ import com.ecom.repository.ProductRepository;
 import com.ecom.repository.UserRepository;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -98,5 +100,20 @@ public class CartService {
         }else {
             return "Item not found in cart";
         }
+    }
+
+    public List<CartItem> getCartItems(){
+        return cartItemRepository.findAll().stream().map(cartItemMapper::toCartItemDto).toList();
+    }
+
+    public List<CartItem> getCart(String id) {
+        return cartItemRepository.findByUserId(Long.valueOf(id))
+                .stream()
+                .map(cartItemMapper::toCartItemDto)
+                .toList();
+    }
+    @Transactional
+    public void clearCart(String userId) {
+        userRepository.findById(Long.valueOf(userId)).ifPresent(cartItemRepository::deleteByUser);
     }
 }
