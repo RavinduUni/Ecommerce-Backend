@@ -1,8 +1,6 @@
 package com.ecom.service;
 
-import com.ecom.dto.CartItem;
 import com.ecom.dto.Order;
-import com.ecom.dto.User;
 import com.ecom.entity.CartItemEntity;
 import com.ecom.entity.OrderEntity;
 import com.ecom.entity.OrderItemEntity;
