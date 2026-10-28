@@ -1,0 +1,18 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ËêĞŠ˜4J$781df051-7fe1-46d2-b42b-fd41f33421fd
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÌêĞŠ˜4J$0a79babc-5c4c-43cd-9bf7-b1bb463e4da6
+
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(ªˆßÙ8ÍêĞŠ˜4J$7579daa2-cd8b-4d94-92ea-8e4ef8db2d56
+¥
+java:S3305"]Inject this field value directly into "authenticationProvider", the only method that uses it.(ÙÍ•¯üÿÿÿÿ8ÍêĞŠ˜4J$c0df3116-5587-42f0-a052-e02e872f1abf
+“
+java:S1128
+"KRemove this unused import 'org.springframework.security.config.Customizer'.(Ïóœ¬ùÿÿÿÿ8¾éÚ‹˜4J$3db95632-b3cf-4f84-a71e-6db4400a0d86
+’
+java:S1128"ORemove this unused import 'org.springframework.security.core.userdetails.User'.(–Ä€8¾éÚ‹˜4J$5b80aba7-8be8-4d00-b9fc-c10ceb50c13e
+™
+java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8¿éÚ‹˜4J$4696bd8d-62cc-461c-8f89-a30ad45b25a9
+©
+java:S1128"aRemove this unused import 'org.springframework.security.provisioning.InMemoryUserDetailsManager'.(îŒúùÿÿÿÿ8¿éÚ‹˜4J$735114a1-15f7-4b62-80cf-450ae7d4aa1b

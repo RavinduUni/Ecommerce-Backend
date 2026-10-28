@@ -7,6 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
@@ -27,9 +30,14 @@ public class UserController {
         return new ResponseEntity<>(userService.getUserById(id), HttpStatus.OK);
     }
 
-    @PostMapping("/")
-    public ResponseEntity<User> createUser(@RequestBody User user){
-        return new ResponseEntity<>(userService.createUser(user), HttpStatus.OK);
+    @PostMapping("/register")
+    public ResponseEntity<Map<String, Object>> createUser(@RequestBody User user){
+        return new ResponseEntity<>(userService.createUser(user), HttpStatus.CREATED);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody User user){
+        return new ResponseEntity<>(userService.login(user), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
@@ -42,6 +50,7 @@ public class UserController {
         }
         return new ResponseEntity<>("User not found", HttpStatus.NOT_FOUND);
     }
+
 
 
 

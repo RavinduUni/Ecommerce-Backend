@@ -68,3 +68,17 @@ f
 0src/main/java/com/ecom/service/OrderService.java,3\3\33fa9ba6b163476b452de72df0b86bfcae5e882a
 ^
 .src/main/java/com/ecom/mapper/OrderMapper.java,e\4\e4b27265c5aa01a1b8d555cdf38be1b2ec4bebb9
+C
+hs_err_pid16648.log,2\b\2b22d4a4174992ea3041629d42645c1e2bc1d8d5
+a
+1src/main/java/com/ecom/config/SecurityConfig.java,2\c\2c02797092dcd3b671c0a8df86bfdfe159d5eb1d
+h
+8src/main/java/com/ecom/service/MyUserDetailsService.java,8\d\8d6bbaffd84a404bdfab0783522cfb4b421f4bf2
+C
+hs_err_pid18792.log,2\2\225e6571155eb88fcd79590b8617b709e9eedf7b
+]
+-src/main/java/com/ecom/dto/UserPrincipal.java,f\0\f0fdab424fd0d04bfe7bbf2fc098e089d52f63cb
+^
+.src/main/java/com/ecom/service/JWTService.java,d\4\d4117efb7e17e074a9ccc958d82c9b0ab4db27ba
+\
+,src/main/java/com/ecom/filter/JWTFilter.java,8\1\81a37ad65b9b306aef1e558dd881e7de6802d7e9

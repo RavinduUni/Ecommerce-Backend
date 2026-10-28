@@ -22,7 +22,10 @@ public class UserEntity {
     private String firstName;
     private String lastName;
     private String email;
+    private String password;
     private String phone;
+
+    @Enumerated
     private UserRole role = UserRole.CUSTOMER;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
