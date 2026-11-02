@@ -25,7 +25,7 @@ public class UserEntity {
     private String password;
     private String phone;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private UserRole role = UserRole.CUSTOMER;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
